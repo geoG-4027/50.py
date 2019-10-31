@@ -23,15 +23,10 @@ linkers = ''
 ifparam = ''
 
 site_ignore = []
-###****IP = raw_input("enter just the sites iP or domain minus http and / after doamin ")
-
-#IP = "35.227.24.107"
-IP = "34.74.105.127" 
-#url = "http://34.74.105.127/39a5d614ca/page/1"
 xurl = raw_input("enter ip or domain to scan")
 
 
-#url = "http://35.227.24.107/ce371a21a0/"
+
 full_links = []
 part_links = []
 scraped = []
@@ -64,7 +59,7 @@ class enumerateSystem:      # enumerate the system
         ''' if no . on the end then its a idrectory '''
         ''' we do have ../../ being used on webpages'''
                 # params should be hand picked
-#        payload = {'username': z , 'password': 'HACKER101'}
+    #payload = {'username': z , 'password': 'HACKER101'}
         r = requests.get(URL, headers=headers)
         injector.show_injection_results(r)
 
@@ -135,7 +130,7 @@ class fuzzyInjector:     # test and gather codes
             
             for i in payload:
 
-                print (z)
+               
                 # params should be hand picked
                 payload = {'username': z , 'password': 'HACKER101'}
                 r = requests.post(URL, headers=headers, data=payload)
