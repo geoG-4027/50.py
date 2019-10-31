@@ -20,9 +20,8 @@ exploits =  [['injections', 'overflows', 'includes', 'forgeries'],
 
 files_found = [] 
 dirs_found  = []
-links_tmp   = []
-#payload_native = "%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%ee%06%40%00%00%00%00%00"
-# develop a payload generation 
+links_tmp   = [
+# 
 
 class enumerateSystem:      # enumerate the system 
 
