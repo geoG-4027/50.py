@@ -25,17 +25,15 @@ ifparam = ''
 site_ignore = []
 ###****IP = raw_input("enter just the sites iP or domain minus http and / after doamin ")
 
-#IP = "35.227.24.107"
 IP = "34.74.105.127" 
-#url = "http://34.74.105.127/39a5d614ca/page/1"
+
 xurl = raw_input("enter ip or domain to scan")
 
 
-#url = "http://35.227.24.107/ce371a21a0/"
+
 full_links = []
 part_links = []
 scraped = []
- #payload_native = "%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%ee%06%40%00%00%00%00%00"
 # develop a payload generation 
 
 headers = {'User-Agent': 'Mozilla/5.0'}
